@@ -16,12 +16,6 @@
   -moz-transform: @properties;
 }
 
-.block_200(@background: @black) {
-  height: 185px;
-  width: 210px;
-  background: @background;
-  .box();
-}
 .cover(@img) {
   background: url(@img) no-repeat;
   background-size: cover;
@@ -73,7 +67,7 @@
 .btn_style(@width: 210px, @padding: 20px) {
   width: @width;
   .align();
-  background: @color-base;
+  background: @base_color;
   color: @white;
   padding: @padding;
   border: none;
@@ -127,7 +121,7 @@
     .go_filter(brightness(@filter));
   }
 }
-.text_hover(@color: @color-base, @text-decoration: none) {
+.text_hover(@color: @base_color, @text-decoration: none) {
   .transition(all, 0.2s);
   &:hover {
     color: @color;
@@ -156,14 +150,13 @@
   -webkit-text-size-adjust: @prop;
   -ms-text-size-adjust: @prop;
 }
-.menu_toogle(@background: @black) {
+.menu_toogle(@background: @black, @width: 40px, @height: 4px) {
   &>span {
     display: block;
-    width: 40px;
-    height: 4px;
+    width: @width;
+    height: @height;
     background: @background;
     margin-bottom: 8px;
-    .radius(5px);
   }
 }
 .collapse_menu(@background, @color, @font: 20px) {
@@ -467,19 +460,13 @@
   }
 }
 
-.hover_scale(@scale: 1.1, @time: 0.4s) {
-  .transition(all, @time);
-  &:hover {
-    transform: scale(@scale);
-  }
-}
-.change_arr_hov(@img: '../img/color_base_arrow.png', @posX: 10%, @posY: 50%, @background: @white, @color: @color-base) {
+.change_arr_hov(@img: '../img/color_base_arrow.png', @posX: 10%, @posY: 50%, @background: @white, @color: @base_color) {
   &:hover {
     .background_el_col(@img, @posX, @posY, @white);
-    color: @color-base;
+    color: @base_color;
   }
 }
-.pagination_style(@color: @color-base) {
+.pagination_style(@color: @base_color) {
   li {
     a {
       color: @color;
