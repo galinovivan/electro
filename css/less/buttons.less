@@ -1,0 +1,18 @@
+.base_btn {
+  display: block;
+  width: 200px;
+  background: @base_color;
+  color: @white;
+  text-transform: uppercase;
+  font-size: @baseFontSize + 4;
+  padding: 12px 0;
+  font-family: @ultraLightFont;
+  .align();
+  .margin_align();
+  .btn_hov();
+  &.order_btn {
+    background-image: url('../img/order_icon.png');
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+  }
+}

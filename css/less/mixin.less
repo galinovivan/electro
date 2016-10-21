@@ -48,6 +48,13 @@
   -o-transition: @what @time;
   transition: @what @time;
 }
+.transition_fast(@prop: all, @time: 0.2s) {
+  -webkit-transition: @prop @time;
+  -moz-transition: @prop @time;
+  -ms-transition: @prop @time;
+  -o-transition: @prop @time;
+  transition: @prop @time;
+}
 .transition-more(@what, @time, @what-2, @time-2) {
   -webkit-transition: @what @time, @what-2 @time-2;
   -moz-transition: @what @time, @what-2 @time-2;
@@ -85,7 +92,7 @@
 .btn_hov {
   .transition();
   &:hover {
-    background: lighten(@base_color, 10%);
+    background: darken(@base_color, 5%);
     color: @white;
     text-decoration: none;
   }
