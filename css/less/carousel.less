@@ -1,0 +1,46 @@
+.carousel {
+  position: relative;
+}
+.main_carousel {
+  .carousel-indicators {
+    top: 40%;
+    left: 10%;
+    .carousel_indicators_style(10px, 10px);
+    li {
+      display: block;
+    }
+  }
+  .carousel-inner {
+    .item {
+      height: @carousel_height;
+      .carousel-caption {
+        top: 15%;
+        bottom: auto;
+        left: 19%;
+        right: auto;
+        .align(left);
+        h2.small {
+          font-family: @ultraLightFont;
+          color: @black;
+          text-shadow: none;
+        }
+        h1.larg {
+          font-family: @ultraBoldFont;
+          color: @second_base_color;
+          text-shadow: none;
+        }
+        h2.larg {
+        font-family: @ultraLightFont;
+          color: @black;
+          text-shadow: none;
+        }
+        .example_text {
+          font-size: @baseFontSize + 2;
+          text-shadow: none;
+          margin-top: 100px;
+          .separate(50px, @black, -50px);
+        }
+      }
+    }
+  }
+}

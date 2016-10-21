@@ -280,24 +280,38 @@
   }
 }
 .carousel_indicators_style(@width: 8px, @height: 8px) {
+  width: auto;
+  height: auto;
+  margin-left: auto;
   &>li {
-
     .padding_margin_clear();
     margin-right: 10px;
     margin-bottom: 10px;
     width: @width;
     height: @height;
     background: transparent;
+    border: 1px solid @base_color;
     &.active {
       margin: 0;
       margin-right: 10px;
       margin-bottom: 10px;
       width: @width;
       height: @height;
-      background: @white;
-      border-color: @white;
+      background: @base_color;
 
     }
+  }
+}
+.separate(@width: 100%, @color: @bord_color, @top: -50px) {
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: @top;
+    width: @width;
+    background: @color;
+    height: 2px;
   }
 }
 .shadow_hover(@color: @base_color, @lenght: 7px) {

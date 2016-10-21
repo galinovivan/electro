@@ -8,6 +8,7 @@
     </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 
@@ -101,9 +102,9 @@
     <div class="container-fluid full_width">
         <div class="carousel slide" id="mainCarousel" data-ride="carousel" data-interval="2000">
             <ol class="carousel-indicators">
-                <li class="active" data-slide-to="0"></li>
-                <li data-slide-to="1"></li>
-                <li data-slide-to="2"></li>
+                <li class="active" data-slide-to="0" data-target="#mainCarousel"></li>
+                <li data-slide-to="1" data-target="#mainCarousel"></li>
+                <li data-slide-to="2" data-target="#mainCarousel"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
@@ -111,16 +112,62 @@
                 <h2 class="small up">Магазин</h2>
                     <h1 class="larg up">Электро</h1>
                     <h2 class="larg up">Инструмента</h2>
-                    <p class="up text_gray">Это пример баннера</p>
+                    <p class="up text_gray example_text">Это пример баннера</p>
                 </div>
                     <div class="img_wrapper">
                 <img src="img/main_carousel_item_1.png" class="img-responsive" />
                         </div>
                     </div>
+                <div class="item">
+                    <div class="carousel-caption">
+                        <h2 class="small up">Магазин</h2>
+                        <h1 class="larg up">Электро</h1>
+                        <h2 class="larg up">Инструмента</h2>
+                        <p class="up text_gray example_text">Это пример баннера</p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="img/main_carousel_item_1.png" class="img-responsive" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-caption">
+                        <h2 class="small up">Магазин</h2>
+                        <h1 class="larg up">Электро</h1>
+                        <h2 class="larg up">Инструмента</h2>
+                        <p class="up text_gray example_text">Это пример баннера</p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="img/main_carousel_item_1.png" class="img-responsive" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
         </div>
+   <div class="category_carousel">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-12 clearfix">
+                   <div class="section_capt">
+                       <h2>Лучшие предложения</h2>
+                   </div>
+                   <div class="category_control pull-right">
+                       <a href="#categoryCarousel" class="left carousel-control" data-slide="prev"></a>
+                       <a href="#categoryCarousel" class="right carousel-control" data-slide="next"></a>
+                   </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class="carousel slide" data-ride="carousel" data-interval="6000" id="categoryCarousel">
+                   <div class="carousel-inner">
+                       <div class="item active">
+                           <div class="shop_items"></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
 </main>
 </body>
 </html>

@@ -786,3 +786,74 @@ button:focus {
 .second_header .header_cart span strong {
   font-family: 'open_sans_bold';
 }
+.carousel {
+  position: relative;
+}
+.main_carousel .carousel-indicators {
+  top: 40%;
+  left: 10%;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+}
+.main_carousel .carousel-indicators > li {
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 1px solid #ff7a18;
+}
+.main_carousel .carousel-indicators > li.active {
+  margin: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 10px;
+  height: 10px;
+  background: #ff7a18;
+}
+.main_carousel .carousel-indicators li {
+  display: block;
+}
+.main_carousel .carousel-inner .item {
+  height: 520px;
+}
+.main_carousel .carousel-inner .item .carousel-caption {
+  top: 15%;
+  bottom: auto;
+  left: 19%;
+  right: auto;
+  text-align: left;
+}
+.main_carousel .carousel-inner .item .carousel-caption h2.small {
+  font-family: 'roboto_thin';
+  color: #3b3b3b;
+  text-shadow: none;
+}
+.main_carousel .carousel-inner .item .carousel-caption h1.larg {
+  font-family: 'raleway_black';
+  color: #9eda36;
+  text-shadow: none;
+}
+.main_carousel .carousel-inner .item .carousel-caption h2.larg {
+  font-family: 'roboto_thin';
+  color: #3b3b3b;
+  text-shadow: none;
+}
+.main_carousel .carousel-inner .item .carousel-caption .example_text {
+  font-size: 16px;
+  text-shadow: none;
+  margin-top: 100px;
+  position: relative;
+}
+.main_carousel .carousel-inner .item .carousel-caption .example_text::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -50px;
+  width: 50px;
+  background: #3b3b3b;
+  height: 2px;
+}
