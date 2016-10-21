@@ -290,11 +290,11 @@
     .shadow(0 0 5px 4px @color);
   }
 }
-.toggle(@background: @white) {
+.toggle(@background: @white, @width: 25px, @height: 3px) {
   &>span {
     background: @background;
-    width: 25px;
-    height: 3px;
+    width: @width;
+    height: @height;
     margin-bottom: 6px;
     display: block;
   }

@@ -86,6 +86,8 @@ h3 {
 h4 {
   font-size: 18px;
   font-family: 'roboto_medium';
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .align_center {
   text-align: center;
@@ -433,12 +435,15 @@ button:focus {
 .list_inline li {
   display: inline-block;
 }
-.nav_toogle > span {
-  background: #3b3b3b;
+.nav_toggle > span {
+  background: #ffffff;
   width: 25px;
-  height: 3px;
+  height: 2px;
   margin-bottom: 6px;
   display: block;
+}
+.nav_toggle span {
+  margin-bottom: 5px;
 }
 .section_capt_center {
   text-align: center;
@@ -597,4 +602,21 @@ button:focus {
     margin: 30px 0;
     text-align: center;
   }
+}
+.main_header {
+  height: 60px;
+}
+.accordion_menu {
+  padding: 19px;
+  cursor: pointer;
+  position: relative;
+  width: 50%;
+  height: 60px;
+  text-align: center;
+}
+.accordion_menu h4 {
+  color: #ffffff;
+}
+.accordion_menu .second_level_menu {
+  display: none;
 }

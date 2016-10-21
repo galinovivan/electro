@@ -69,6 +69,8 @@ h3 {
 h4 {
   font-size: @h4_size;
   font-family: @mediumFont;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .align_center {
   .align();
@@ -207,8 +209,11 @@ button {
     display: inline-block;
   }
 }
-.nav_toogle {
-  .toggle(@toggleColor);
+.nav_toggle {
+  .toggle(@white, 25px, 2px);
+  span {
+    margin-bottom: 5px;
+  }
 }
 .section_capt_center {
   .row {
