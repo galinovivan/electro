@@ -1,0 +1,41 @@
+.main_header {
+  height: @header_height;
+  border-bottom: 1px solid @bord_color;
+}
+.second_header {
+  padding: 50px;
+  .brand {
+    .media-body {
+      vertical-align: middle;
+    }
+    .brand_caption {
+      font-size: 30px;
+      color: @base_color;
+    }
+  }
+  .header_contact {
+    h3 {
+      font-size: @h3_size - 4;
+      line-height: 1.4;
+    }
+  }
+  .header_contact,
+  .header_adress {
+    padding-top: 10px;
+  }
+  .header_cart {
+    padding-top: 15px;
+    .media {
+      overflow: visible;
+    }
+    .media-body {
+      vertical-align: middle;
+      padding-left: 20px;
+    }
+    span {
+      strong {
+        font-family: @open_sans_bold;
+      }
+    }
+  }
+}

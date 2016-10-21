@@ -112,6 +112,11 @@
   -moz-filter: @properties;
   -webkit-filter: @properties;
 }
+.radius(@radius) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
 .bord(@weight: 1px, @color: @bord_color) {
   border: @weight solid @color;
 }
@@ -199,6 +204,23 @@
   }
 
 }
+ .circle_sticker_style(@width: 17px) {
+   position: relative;
+   &::after {
+     content: '2';
+     background: @second_base_color;
+     font-family: @open_sans_bold;
+     color: @white;
+     font-size: @smallFont - 3;
+     width: @width;
+     height: @width;
+     display: block;
+     position: absolute;
+     padding: 1.3px;
+     .radius(50%);
+     .align();
+   }
+ }
 .radio_form_style(@width, @height) {
   padding: 40px;
   background: @backgroundGray;

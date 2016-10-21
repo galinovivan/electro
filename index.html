@@ -26,9 +26,9 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <h4>Каталог товаров</h4>
-                     <i class="fa fa-angle-bottom"></i>
-                    <ul class="second_level_menu">
+                    <h4 class="caption">Каталог товаров</h4>
+                     <i class="fa fa-angle-down pull-right arrow"></i>
+                    <ul class="second_level_menu base_background">
                         <li><a href="#">Дрель</a></li>
                         <li><a href="#">Бензопила</a></li>
                         <li><a href="#">И еще дрель</a></li>
@@ -50,7 +50,7 @@
                         <li><a href="#" class="text_gray">
                             Контакты
                         </a></li>
-                        <li><a href="#" class="text_gray">
+                        <li><a href="#" class="text_gray search">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </a></li>
                     </ul>
@@ -62,13 +62,65 @@
     <div class="second_header">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 brand"></div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3"></div>
+                <div class="col-md-3 brand">
+                <div class="media">
+                    <a class="media-left" href="index.html">
+                        <img class="media-object" src="img/logo.png" alt="logo" />
+                    </a>
+                    <div class="media-body">
+                    <span class="media-heading brand_caption">
+                    -Shopping
+                    </span>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-3 header_contact">
+                    <h3>+7 (812) 123-45-67</h3>
+                    <a href="#" class="text_gray">Заказать звонок</a>
+                </div>
+                <div class="col-md-3 header_adress">
+                    <p class="text_gray small_font">Санкт-Петербург, ул. Добрая, 55</p>
+                    <p class="text_gray small_font">Пн – Пт с 10:00 до 20:00</p>
+                </div>
+                <div class="col-md-3 header_cart">
+                    <div class="media">
+                        <a class="media-left cart_link circle_sticker" href="#">
+                            <img src="img/cart_icon.png" alt="cart" class="media-object" />
+                        </a>
+                        <div class="media-body">
+                            <span>У вас 2 товара на <strong>1 900 <i class="fa fa-ruble"></i></strong></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </header>
+<main>
+    <div class="main_carousel">
+    <div class="container-fluid full_width">
+        <div class="carousel slide" id="mainCarousel" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0"></li>
+                <li data-slide-to="1"></li>
+                <li data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                <div class="carousel-caption">
+                <h2 class="small up">Магазин</h2>
+                    <h1 class="larg up">Электро</h1>
+                    <h2 class="larg up">Инструмента</h2>
+                    <p class="up text_gray">Это пример баннера</p>
+                </div>
+                    <div class="img_wrapper">
+                <img src="img/main_carousel_item_1.png" class="img-responsive" />
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+        </div>
+</main>
 </body>
 </html>
