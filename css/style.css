@@ -140,6 +140,7 @@ button {
   font-family: 'roboto_thin';
   text-transform: uppercase;
   padding: 12px 0;
+  cursor: pointer;
   text-align: center;
   display: block;
 }
@@ -362,6 +363,7 @@ button:focus {
   text-shadow: none !important;
   box-shadow: none !important;
   background-image: none !important;
+  text-decoration: none !important;
 }
 .base_form {
   display: block;
@@ -543,6 +545,9 @@ button:focus {
 .section_capt h2 {
   margin: 0;
 }
+.section_capt h2.white {
+  color: #ffffff;
+}
 .section_capt .back_link {
   position: absolute;
   top: 40%;
@@ -610,12 +615,15 @@ button:focus {
   background: #f9f9f9;
   padding: 70px 0 70px 0;
 }
+.news.news_widget {
+  margin-bottom: 30px;
+}
 .news .section_capt {
   margin-bottom: 45px;
   margin-top: -25px;
 }
 .news .news_list {
-  padding: 0 100px 0 55px;
+  padding: 0 120px 0 55px;
   border: 8px solid transparent;
   -moz-border-image: url('../img/news_border.png') 10 round round;
   -webkit-border-image: url('../img/news_border.png') 10 round round;
@@ -646,8 +654,54 @@ button:focus {
 .news .news_lg_item .news_content p {
   margin-bottom: 45px;
 }
+.news .news_lg_item .news_content p:last-of-type {
+  margin-bottom: 65px;
+}
 .news .news_content {
   line-height: 1.7;
+}
+.category.category_widget {
+  margin-bottom: 90px;
+}
+.category .category_wrapper:not(:first-of-type) {
+  padding-left: 30px;
+}
+.category .category_wrapper .category_item {
+  display: block;
+  height: 220px;
+  position: relative;
+  text-align: right;
+}
+.category .category_wrapper .category_item.blue {
+  background: #33b5cb;
+}
+.category .category_wrapper .category_item.green {
+  background: #9eda36;
+}
+.category .category_wrapper .category_item.orange {
+  background: #ff7a18;
+}
+.category .category_wrapper .category_item.yellow {
+  background: #ffde1f;
+}
+.category .category_wrapper .category_item img {
+  display: inline-block;
+}
+.category .category_wrapper .category_item .item_summary {
+  display: inline-block;
+  position: absolute;
+  left: 10%;
+  bottom: 30px;
+  padding: 10px 15px;
+  background: #3c3c3c;
+  color: #ffffff;
+  font-family: 'roboto_medium';
+  font-size: 20px;
+}
+.video {
+  background: url('../img/video_cover.jpg') no-repeat;
+  background-size: cover;
+  height: 667px;
 }
 .accordion_menu {
   padding: 19px;
@@ -957,6 +1011,7 @@ button:focus {
   font-family: 'roboto_thin';
   text-transform: uppercase;
   padding: 12px 0;
+  cursor: pointer;
   text-align: center;
   background: #ff7a18;
   color: #ffffff;
@@ -985,10 +1040,12 @@ button:focus {
   font-family: 'roboto_thin';
   text-transform: uppercase;
   padding: 12px 0;
+  cursor: pointer;
   text-align: center;
   background: transparent;
   color: #ff7a18;
-  border: 1px solid #ff7a18;
+  border: 2px solid #ff7a18;
+  font-weight: 900;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
@@ -999,4 +1056,8 @@ button:focus {
   color: #ffffff;
   background-color: #ff7a18;
   text-decoration: none !important;
+}
+.btn_transparent i {
+  margin-left: 20px;
+  font-size: 25px;
 }

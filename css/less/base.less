@@ -215,6 +215,7 @@ button {
   text-shadow: none !important;
   box-shadow: none !important;
   background-image: none !important;
+  text-decoration: none !important;
 }
 .base_form {
   .light_form();
@@ -294,6 +295,9 @@ button {
   .align(left);
   h2 {
     margin: 0;
+    &.white {
+      color: @white;
+    }
   }
   .back_link {
     position: absolute;
