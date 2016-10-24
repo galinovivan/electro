@@ -71,21 +71,20 @@
   justify-content: @space;
   align-items: center;
 }
-.btn_style(@width: 210px, @padding: 20px) {
-  width: @width;
-  .align();
-  background: @base_color;
-  color: @white;
-  padding: @padding;
-  border: none;
+.btn_style() {
   display: block;
-  .btn_hov();
+  width: 200px;
+  font-size: @baseFontSize + 4;
+  font-family: @ultraLightFont;
+  text-transform: uppercase;
+  padding: 12px 0;
+  .align();
 }
-.btn_hover(@background, @color) {
+.btn_hover(@background: @base_color, @color: @white) {
   .transition(all, 0.2s);
   &:hover {
     color: @color;
-    background: @background;
+    background-color: @background;
     text-decoration: none !important;
   }
 }

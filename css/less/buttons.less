@@ -1,13 +1,7 @@
 .base_btn {
-  display: block;
-  width: 200px;
+  .btn_style();
   background: @base_color;
   color: @white;
-  text-transform: uppercase;
-  font-size: @baseFontSize + 4;
-  padding: 12px 0;
-  font-family: @ultraLightFont;
-  .align();
   .margin_align();
   .btn_hov();
   &.order_btn {
@@ -16,3 +10,11 @@
     background-position: 10% 50%;
   }
 }
+.btn_transparent {
+  .btn_style();
+  background: transparent;
+  color: @base_color;
+  border: 1px solid @base_color;
+  .btn_hover();
+}
+
