@@ -9,9 +9,20 @@
     li {
       display: block;
     }
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      top: auto;
+      left: 0;
+      bottom: 35px;
+      .align();
+      li {
+        display: inline-block;
+      }
+    }
   }
   .carousel-inner {
     .item {
+      .cover('../img/main_carousel_item_1.png');
       height: @carousel_height;
       .carousel-caption {
         top: 15%;
@@ -42,6 +53,18 @@
         }
       }
     }
+    @media screen and (max-width: 991px) {
+      .item {
+      .carousel-caption {
+        .example_text {
+          margin-top: 40px;
+          &::before {
+            display: none;
+            }
+          }
+        }
+      }
+    }
   }
 }
 .category_controls {
@@ -61,7 +84,13 @@
 }
 #categoryCarousel {
   .carousel-inner {
-    //overflow: visible;
     height: 500px;
+    @media screen and (max-width: 991px) {
+      height: auto;
+      margin-bottom: 50px;
+    }
   }
+}
+#mobileBottomCarousel {
+  padding: 0 30px;
 }
