@@ -209,6 +209,10 @@ button {
   &::after {
     top: -2px;
     right: -10px;
+    @media screen and (max-width: 991px) {
+      top: 20px;
+      right: -15px;
+    }
   }
 }
 .carousel-control {
@@ -249,12 +253,7 @@ button {
     display: inline-block;
   }
 }
-.nav_toggle {
-  .toggle(@white, 25px, 2px);
-  span {
-    margin-bottom: 5px;
-  }
-}
+
 .section_capt_center {
   .row {
     position: relative;

@@ -1,0 +1,29 @@
+
+// social sprite
+.stitches-sprite_social(@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+}
+
+.sprite_social {
+  background-image: url('../img/social_sprite.png');    background-repeat: no-repeat;
+  display: block;
+
+  &.sprite_social-social_fb {
+    .stitches-sprite_social(-5px, -5px, 30px, 20px);
+  }
+
+  &.sprite_social-social_odn {
+    .stitches-sprite_social(-5px, -35px, 30px, 20px);
+  }
+
+  &.sprite_social-social_vk {
+    .stitches-sprite_social(-45px, -5px, 30px, 20px);
+  }
+
+  &.sprite_social-social_youtube {
+    .stitches-sprite_social(-45px, -35px, 30px, 20px);
+  }
+}
+// social sprite
