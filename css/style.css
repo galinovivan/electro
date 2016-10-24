@@ -701,7 +701,7 @@ button:focus {
 .video {
   background: url('../img/video_cover.jpg') no-repeat;
   background-size: cover;
-  height: 667px;
+  padding-bottom: 60px;
 }
 .accordion_menu {
   padding: 19px;
