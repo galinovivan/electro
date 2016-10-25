@@ -1,3 +1,12 @@
+header {
+  &.border {
+    border-bottom: 1px solid @bord_color;
+    @media screen and (max-width: 991px) {
+      border: none;
+    }
+  }
+
+}
 .main_header {
   height: @header_height;
   border-bottom: 1px solid @bord_color;

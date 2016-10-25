@@ -55,6 +55,12 @@ footer {
     padding-bottom: @mobile_footer_height;
   }
 }
+p.medium {
+  font-size: @baseFontSize + 2;
+  @media screen and (max-width: 991px) {
+    font-size: @baseFontSize + 4;
+  }
+}
 h1,
 h2,
 h3 {
@@ -88,12 +94,18 @@ ul {
 }
 h3 {
   font-size: @h3_size;
+  &.small {
+    font-size: @h3_size - 3;
+  }
 }
 h4 {
   font-size: @h4_size;
   font-family: @mediumFont;
   margin-top: 0;
   margin-bottom: 0;
+}
+.base_color {
+  color: @base_color;
 }
 .align_center {
   .align();
@@ -270,9 +282,12 @@ button {
   .align();
 }
 .section_capt {
-  margin-top: 50px;
-  margin-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
   position: relative;
+  &.no_marg_bot {
+    padding-bottom: 0;
+  }
   h1 {
     font-size: 45px;
     .align();
@@ -321,6 +336,7 @@ button {
     }
   }
   @media screen and (max-width: 991px) {
+    border-bottom: 1px solid @bord_color;
     .align();
     .back_link {
       right: auto;

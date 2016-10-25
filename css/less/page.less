@@ -151,3 +151,73 @@ padding-top: 85px;
     }
   }
 }
+.contacts_page {
+  margin-bottom: 90px;
+  @media screen and (max-width: 991px) {
+    margin-bottom: 5px;
+  }
+}
+.contact_info {
+  border: 1px solid @bord_color;
+  border-bottom: none;
+  padding: 45px 0;
+  .info_item {
+    .align();
+    .info_icon {
+      height: 75px;
+      margin-bottom: 15px;
+      i {
+        display: inline-block;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    border: none;
+    .info_item {
+      .align(left);
+      .info_icon {
+        .align();
+      }
+      .info_text {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+.map_container {
+  #map {
+    height: 600px;
+  }
+}
+.contact_main {
+  .form_container {
+    height: 600px;
+    padding: 50px 0;
+    border: 10px solid transparent;
+    .border_img(url('../img/contact_border.png') 10 repeat repeat);
+    .contact_form {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 991px) {
+      height: auto;
+      .border_img(none);
+      .contact_form {
+        width: 90%;
+      }
+    }
+  }
+}
+
+.order_page {
+  .form_container {
+    border: 1px solid @bord_color;
+    margin-bottom: 90px;
+    padding: 70px 0;
+    .order_form {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+}

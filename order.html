@@ -1,7 +1,7 @@
 <!DOCTYPE html>
         <html>
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Контакты</title>
 
@@ -46,7 +46,7 @@
                         <li><a href="#" class="text_gray">
                             Доставка и оплата
                         </a></li>
-                        <li><a href="#" class="text_gray">
+                        <li><a href="contacts.html" class="text_gray">
                             Контакты
                         </a></li>
                         <li><a href="#" class="text_gray search">
@@ -130,77 +130,38 @@
 </header>
 <!-- //header -->
 <main>
-    <div class="contacts_page">
+    <div class="order_page">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="section_capt">
-                        <h2>Контакты</h2>
+                        <h2>Оформление заказа</h2>
                     </div>
-                </div>
-            </div>
-            <div class="row contact_info">
-                <div class="col-md-4 info_item">
-                    <div class="row">
-                    <div class="info_icon col-md-12 col-xs-3">
-                        <i class="sprite_contact sprite_contact-contact_marker"></i>
-                    </div>
-                    <div class="info_text col-md-12 col-xs-9">
-                        <p class="medium">
-                            Санкт-Петербург, ул. Добрая, дом 55
-                        </p>
-                    </div>
-                        </div>
-                </div>
-                <div class="col-md-4 info_item">
-                    <div class="row">
-                    <div class="info_icon col-md-12 col-xs-3">
-                        <i class="sprite_contact sprite_contact-contact_phone"></i>
-                    </div>
-                    <div class="info_text col-md-12 col-xs-9">
-                        <h3 class="small">
-                            +7 (812) 123-45-67
-                        </h3>
-                    </div>
-                        </div>
-                </div>
-                <div class="col-md-4 info_item">
-                    <div class="row">
-                    <div class="info_icon col-md-12 col-xs-3">
-                        <i class="sprite_contact sprite_contact-contact_mail"></i>
-                    </div>
-                    <div class="info_text col-md-12 col-xs-9">
-                        <p class="medium base_color">
-                            info@eshopping.ru
-                        </p>
-                    </div>
-                        </div>
                 </div>
             </div>
         </div>
-        <div class="contact_main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 map_container">
-                        <div id="map"></div>
-                    </div>
-                    <div class="col-md-6 form_container background_gray">
-                        <div class="contact_form">
-                            <div class="form_heading">
-                            <h3 class="small">Напишите нам с сайта</h3>
-                                </div>
-                            <form method="post" class="base_form">
-                                <input type="text" name="name" placeholder="Как вас зовут?" required />
-                                <input type="text" name="contact" placeholder="Телефон или почта" required />
-                                <textarea name="message"  cols="30" rows="8" placeholder="Может быть напишете нам что-нибудь?" required></textarea>
-                                <input type="submit" value="ОТПРАВИТЬ" class="base_btn">
-                            </form>
-                        </div>
-                    </div>
+        <div class="container">
+        <div class="row">
+            <div class="form_container col-xs-12 background_gray">
+                <div class="order_form">
+                <div class="form_heading">
+                     <p class="medium">Напомним вам, то в вашей корзине 2 товара на сумму <h2>6 469 <i class="fa fa-ruble"></i></h2></p>
                 </div>
+                    <form class="base_form">
+                        <input type="text" name="name" placeholder="Как вас зовут?" required class="inline_input small" />
+                        <input type="text" name="phone" placeholder="Телефон*" required class="inline_input small" />
+                        <input type="text" name="email" placeholder="E-mail" class="small" />
+                        <input type="text" name="adress" placeholder="Адрес доставки" required />
+                        <textarea name="comment"  cols="30" rows="8" placeholder="Дополнительная информация"></textarea>
+                        <input type="submit" value="ПОДТВЕРДИТЬ ЗАКАЗ" class="small base_btn">
+                    </form>
+                <form></form>
             </div>
+                </div>
+        </div>
         </div>
     </div>
+
 </main>
 <!-- footer -->
 <div class="pre_footer"></div>
@@ -258,9 +219,6 @@
     </div>
 </footer>
 <!-- //footer -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7wYZn36Y2XGUlY7Y_tlq67p_5JitUj2c&callback=initMap">
-</script>
-<script src="js/map.js"></script>
 <script src="js/menu.js"></script>
 </body>
 </html>

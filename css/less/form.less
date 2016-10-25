@@ -1,0 +1,45 @@
+form {
+  &.base_form {
+    input:not([type="submit"]),
+    textarea {
+      background: @white;
+      padding: 20px 30px;
+      border: 1px solid @bord_color;
+      width: 100%;
+      margin-bottom: 15px;
+      .placeholder_style(@textGray, @baseFontSize + 2);
+      .moz_placeholder_style(@textGray, @baseFontSize + 2);
+      &.small {
+        width: 48%;
+      }
+      &.inline_input {
+        display: inline-block;
+        &:first-of-type {
+          margin-right: 2%;
+        }
+      }
+    }
+    input[type="submit"] {
+      width: 50%;
+      margin: 30px 0 0 0;
+      font-family: @lightFont;
+      &.small {
+        width: 30%;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      input:not([type="submit"]),
+      textarea {
+        .placeholder_style(@textGray, @baseFontSize + 4);
+        .moz_placeholder_style(@textGray, @baseFontSize + 4);
+      }
+      input[type="submit"]{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.form_heading {
+  margin-bottom: 35px;
+}

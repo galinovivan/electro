@@ -27,3 +27,28 @@
   }
 }
 // social sprite
+
+// contact sprite
+.stitches-sprite_contact(@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+}
+
+.sprite_contact {
+  background-image: url('../img/contact_sprite.png');    background-repeat: no-repeat;
+  display: block;
+
+  &.sprite_contact-contact_mail {
+    .stitches-sprite_contact(-5px, -5px, 55px, 57px);
+  }
+
+  &.sprite_contact-contact_marker {
+    .stitches-sprite_contact(-70px, -5px, 46px, 56px);
+  }
+
+  &.sprite_contact-contact_phone {
+    .stitches-sprite_contact(-70px, -71px, 55px, 55px);
+  }
+}
+// contact sprite

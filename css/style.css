@@ -73,6 +73,14 @@ footer {
     padding-bottom: 175px;
   }
 }
+p.medium {
+  font-size: 16px;
+}
+@media screen and (max-width: 991px) {
+  p.medium {
+    font-size: 18px;
+  }
+}
 h1,
 h2,
 h3 {
@@ -113,11 +121,17 @@ ul {
 h3 {
   font-size: 26px;
 }
+h3.small {
+  font-size: 23px;
+}
 h4 {
   font-size: 18px;
   font-family: 'roboto_medium';
   margin-top: 0;
   margin-bottom: 0;
+}
+.base_color {
+  color: #ff7a18;
 }
 .align_center {
   text-align: center;
@@ -478,7 +492,7 @@ button:focus {
   }
 }
 .background_gray {
-  background: #f9f9f9;
+  background: #fafafa;
 }
 .base_background {
   background: #ff7a18;
@@ -511,10 +525,13 @@ button:focus {
   position: relative;
 }
 .section_capt {
-  margin-top: 50px;
-  margin-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
   position: relative;
   text-align: left;
+}
+.section_capt.no_marg_bot {
+  padding-bottom: 0;
 }
 .section_capt h1 {
   font-size: 45px;
@@ -574,6 +591,7 @@ button:focus {
 }
 @media screen and (max-width: 991px) {
   .section_capt {
+    border-bottom: 1px solid #f2f2f2;
     text-align: center;
   }
   .section_capt .back_link {
@@ -650,8 +668,28 @@ button:focus {
   width: 30px;
   height: 20px;
 }
+.sprite_contact {
+  background-image: url('../img/contact_sprite.png');
+  background-repeat: no-repeat;
+  display: block;
+}
+.sprite_contact.sprite_contact-contact_mail {
+  background-position: -5px -5px;
+  width: 55px;
+  height: 57px;
+}
+.sprite_contact.sprite_contact-contact_marker {
+  background-position: -70px -5px;
+  width: 46px;
+  height: 56px;
+}
+.sprite_contact.sprite_contact-contact_phone {
+  background-position: -70px -71px;
+  width: 55px;
+  height: 55px;
+}
 .news {
-  background: #f9f9f9;
+  background: #fafafa;
   padding: 70px 0 70px 0;
 }
 .news.news_widget {
@@ -774,7 +812,7 @@ button:focus {
 }
 footer {
   padding-top: 85px;
-  background: #f0f0f0;
+  background: #fafafa;
 }
 footer .footer_phone h3 {
   font-size: 22px;
@@ -804,6 +842,80 @@ footer i:hover {
   footer .footer_phone h3 {
     margin-bottom: 30px;
   }
+}
+.contacts_page {
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 991px) {
+  .contacts_page {
+    margin-bottom: 5px;
+  }
+}
+.contact_info {
+  border: 1px solid #f2f2f2;
+  border-bottom: none;
+  padding: 45px 0;
+}
+.contact_info .info_item {
+  text-align: center;
+}
+.contact_info .info_item .info_icon {
+  height: 75px;
+  margin-bottom: 15px;
+}
+.contact_info .info_item .info_icon i {
+  display: inline-block;
+}
+@media screen and (max-width: 991px) {
+  .contact_info {
+    border: none;
+  }
+  .contact_info .info_item {
+    text-align: left;
+  }
+  .contact_info .info_item .info_icon {
+    text-align: center;
+  }
+  .contact_info .info_item .info_text {
+    padding-left: 30px;
+  }
+}
+.map_container #map {
+  height: 600px;
+}
+.contact_main .form_container {
+  height: 600px;
+  padding: 50px 0;
+  border: 10px solid transparent;
+  -moz-border-image: url('../img/contact_border.png') 10 repeat repeat;
+  -webkit-border-image: url('../img/contact_border.png') 10 repeat repeat;
+  -o-border-image: url('../img/contact_border.png') 10 repeat repeat;
+  border-image: url('../img/contact_border.png') 10 repeat repeat;
+}
+.contact_main .form_container .contact_form {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  .contact_main .form_container {
+    height: auto;
+    -moz-border-image: none;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+  }
+  .contact_main .form_container .contact_form {
+    width: 90%;
+  }
+}
+.order_page .form_container {
+  border: 1px solid #f2f2f2;
+  margin-bottom: 90px;
+  padding: 70px 0;
+}
+.order_page .form_container .order_form {
+  width: 75%;
+  margin: 0 auto;
 }
 .accordion_menu {
   padding: 19px;
@@ -1039,6 +1151,14 @@ footer i:hover {
 }
 .header_mobile .cart_mobile {
   padding-top: 30px;
+}
+header.border {
+  border-bottom: 1px solid #f2f2f2;
+}
+@media screen and (max-width: 991px) {
+  header.border {
+    border: none;
+  }
 }
 .main_header {
   height: 60px;
@@ -1345,4 +1465,90 @@ footer i:hover {
 .btn_transparent i {
   margin-left: 20px;
   font-size: 25px;
+}
+form.base_form input:not([type="submit"]),
+form.base_form textarea {
+  background: #ffffff;
+  padding: 20px 30px;
+  border: 1px solid #f2f2f2;
+  width: 100%;
+  margin-bottom: 15px;
+}
+form.base_form input:not([type="submit"])::-webkit-input-placeholder,
+form.base_form textarea::-webkit-input-placeholder {
+  color: #acacac;
+  font-size: 16px;
+}
+form.base_form input:not([type="submit"])::-moz-placeholder,
+form.base_form textarea::-moz-placeholder {
+  color: #acacac;
+  font-size: 16px;
+}
+form.base_form input:not([type="submit"]):-moz-placeholder,
+form.base_form textarea:-moz-placeholder {
+  color: #acacac;
+  font-size: 16px;
+}
+form.base_form input:not([type="submit"])::-moz-placeholder,
+form.base_form textarea::-moz-placeholder {
+  color: #acacac;
+  font-size: 16px;
+}
+form.base_form input:not([type="submit"]):-moz-placeholder,
+form.base_form textarea:-moz-placeholder {
+  color: #acacac;
+  font-size: 16px;
+}
+form.base_form input:not([type="submit"]).small,
+form.base_form textarea.small {
+  width: 48%;
+}
+form.base_form input:not([type="submit"]).inline_input,
+form.base_form textarea.inline_input {
+  display: inline-block;
+}
+form.base_form input:not([type="submit"]).inline_input:first-of-type,
+form.base_form textarea.inline_input:first-of-type {
+  margin-right: 2%;
+}
+form.base_form input[type="submit"] {
+  width: 50%;
+  margin: 30px 0 0 0;
+  font-family: 'roboto_light';
+}
+form.base_form input[type="submit"].small {
+  width: 30%;
+}
+@media screen and (max-width: 991px) {
+  form.base_form input:not([type="submit"])::-webkit-input-placeholder,
+  form.base_form textarea::-webkit-input-placeholder {
+    color: #acacac;
+    font-size: 18px;
+  }
+  form.base_form input:not([type="submit"])::-moz-placeholder,
+  form.base_form textarea::-moz-placeholder {
+    color: #acacac;
+    font-size: 18px;
+  }
+  form.base_form input:not([type="submit"]):-moz-placeholder,
+  form.base_form textarea:-moz-placeholder {
+    color: #acacac;
+    font-size: 18px;
+  }
+  form.base_form input:not([type="submit"])::-moz-placeholder,
+  form.base_form textarea::-moz-placeholder {
+    color: #acacac;
+    font-size: 18px;
+  }
+  form.base_form input:not([type="submit"]):-moz-placeholder,
+  form.base_form textarea:-moz-placeholder {
+    color: #acacac;
+    font-size: 18px;
+  }
+  form.base_form input[type="submit"] {
+    width: 100%;
+  }
+}
+.form_heading {
+  margin-bottom: 35px;
 }
