@@ -52,3 +52,33 @@
   }
 }
 // contact sprite
+
+// catalog views sprite
+.stitches-sprite_views(@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+}
+
+.sprite_views {
+  background-image: url('../img/sprite_catalog_views.png');    background-repeat: no-repeat;
+  display: block;
+
+  &.sprite_views-view_lg_gray {
+    .stitches-sprite_views(-5px, -5px, 16px, 16px);
+  }
+
+  &.sprite_views-view_lg_green {
+    .stitches-sprite_views(-31px, -5px, 16px, 16px);
+  }
+
+  &.sprite_views-view_list_gray {
+    .stitches-sprite_views(-5px, -31px, 22px, 17px);
+  }
+
+  &.sprite_views-view_list_green {
+    .stitches-sprite_views(-57px, -5px, 22px, 17px);
+  }
+}
+// catalog views sprite
+

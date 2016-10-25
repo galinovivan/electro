@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+        <html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Корзина</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+foo
+<main>
+        <div class="cart_page">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-xs-12">
+                              <div class="section_capt small_padd no_bord">
+                                      <h2>Корзина</h2>
+                              </div>
+                      </div>
+                   </div>
+           </div>
+                <div class="cart">
+                        <div class="container hidden-xs hidden-sm">
+                                <div class="row cart_item">
+                                        <div class="col-md-2 item_thumb">
+                                                <img src="img/catalog_item_5.png" alt="item" />
+                                        </div>
+                                        <div class="col-md-4 item_title">
+                                                <p class="medium">Зелёный лобзик, жужжит <br />
+                                                        когда пилишь</p>
+                                        </div>
+                                        <div class="col-md-3 item_count">
+                                                <div class="count clearfix">
+                                                        <span class="char minus">
+                                                                <img src="img/minus.png" alt="minus" />
+                                                        </span>
+                                                        <span class="result">1 шт.</span>
+                                                        <span class="char plus">
+                                                                <img src="img/plus.png" alt="plus" />
+                                                        </span>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-3 item_price clearfix">
+                                                <div class="price pull-left">
+                                                        <h3 class="light_text">3 500 <i class="fa fa-ruble"></i></h3>
+                                                </div>
+                                                <div class="cart_close pull-right">
+                                                        <a href="#"><img src="img/close.png" alt="close" />
+                                                                </a>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="row cart_item">
+                                        <div class="col-md-2 item_thumb">
+                                                <img src="img/catalog_item_6.png" alt="item" />
+                                        </div>
+                                        <div class="col-md-4 item_title">
+                                                <p class="medium">Болгарка BOSCH зелёная, <br />
+                                                        а ручка чёрная</p>
+                                        </div>
+                                        <div class="col-md-3 item_count">
+                                                <div class="count clearfix">
+                                                        <span class="char minus">
+                                                                <img src="img/minus.png" alt="minus" />
+                                                        </span>
+                                                        <span class="result">1 шт.</span>
+                                                        <span class="char plus">
+                                                                <img src="img/plus.png" alt="plus" />
+                                                        </span>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-3 item_price clearfix">
+                                                <div class="price pull-left">
+                                                        <h3 class="light_text">1 900 <i class="fa fa-ruble"></i></h3>
+                                                </div>
+                                                <div class="cart_close pull-right">
+                                                        <a href="#"><img src="img/close.png" alt="close" />
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="row result_row background_gray">
+                                        <div class="col-md-offset-9 col-md-3">
+                                                <span class="text_gray">Сумма заказа</span>
+                                                <h2>6 469 <i class="fa fa-ruble"></i></h2>
+                                                <a class="base_btn lg no_cent">Оформить заказ</a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="container visible-xs visible-sm">
+                                <div class="row cart_mobile_item">
+                                   <div class="col-xs-6 item_thumb">
+                                           <img src="img/catalog_item_5.png" alt="item" />
+                                   </div>
+                                        <div class="col-xs-6 item_summary">
+                                                <div class="row">
+                                                        <div class="cart_close clearfix col-xs-12">
+                                                                <img src="img/close.png" alt="close" class="pull-right" />
+                                                        </div>
+                                                        <div class="col-xs-12 item_title">
+                                                                <p>Зелёный лобзик, жужжит когда пилишь</p>
+                                                        </div>
+                                                        <div class="count col-xs-12">
+                                                                <span class="char minus">
+                                                                        <img src="img/minus.png" alt="minus" />
+                                                                </span>
+                                                                <span class="result">1 шт.</span>
+                                                                <span class="char plus">
+                                                                        <img src="img/plus.png" alt="plus" />
+                                                                </span>
+                                                        </div>
+                                                        <div class="item_price col-xs-12">
+                                                                <h3 class="light_text">3 500 <i class="fa fa-ruble"></i></h3>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="row cart_mobile_item">
+                                        <div class="col-xs-6 item_thumb">
+                                                <img src="img/catalog_item_6.png" alt="item" />
+                                        </div>
+                                        <div class="col-xs-6 item_summary">
+                                                <div class="row">
+                                                        <div class="cart_close clearfix col-xs-12">
+                                                                <img src="img/close.png" alt="close" class="pull-right" />
+                                                        </div>
+                                                        <div class="col-xs-12 item_title">
+                                                                <p>Зелёный лобзик, жужжит
+                                                                        когда пилишь</p>
+                                                        </div>
+                                                        <div class="count col-xs-12">
+                                                                <span class="char minus">
+                                                                        <img src="img/minus.png" alt="minus" />
+                                                                </span>
+                                                                <span class="result">1 шт.</span>
+                                                                <span class="char plus">
+                                                                        <img src="img/plus.png" alt="plus" />
+                                                                </span>
+                                                        </div>
+                                                        <div class="item_price col-xs-12">
+                                                                <h3 class="light_text">3 500 <i class="fa fa-ruble"></i></h3>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="mobile_result_row row">
+                                        <div class="col-xs-6 col-xs-offset-6 result">
+                                                <p>Сумма заказа</p>
+                                                <h2>16 469 <i class="fa fa-ruble"></i></h2>
+                                        </div>
+                                        <div class="col-xs-12">
+                                                <a href="#" class="base_btn mob_lg">Оформить заказ</a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</main>
+<!-- footer -->
+<div class="pre_footer"></div>
+<footer>
+        <div class="container">
+                <div class="row">
+                        <div class="col-xs-6 col-md-3 footer_copy">
+                                <p><span class="text_gray">
+               Сайт создан бесплатно на 1С-UMI
+           </span></p>
+                                <p><span class="text_gray">Работает на UMI.CMS</span></p>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 col-sm-offset-2 col-xs-offset-0 col-md-offset-0 col-lg-offset-0 col-md-3 footer_phone">
+                                <h3>
+                                        +7 (812) 123-45-67
+                                </h3>
+                                <div class="row visible-xs visible-sm footer_social_mobile">
+                                        <div class="col-xs-3"><a href="#">
+                                                <i class="sprite_social sprite_social-social_vk"></i>
+                                        </a></div>
+                                        <div class="col-xs-3"><a href="#">
+                                                <i class="sprite_social sprite_social-social_fb"></i>
+                                        </a></div>
+                                        <div class="col-xs-3">
+                                                <i class="sprite_social sprite_social-social_odn"></i
+                                                ><a href="#">
+
+                                        </a></div>
+                                        <div class="col-xs-3"><a href="#">
+                                                <i class="sprite_social sprite_social-social_youtube"></i>
+                                        </a></div>
+                                </div>
+                        </div>
+                        <div class="col-md-3 footer_info hidden-xs hidden-sm">
+                                <p><span class="text_gray">Санкт-Петербург, ул. Добрая, 55</span></p>
+                                <p><span class="text_gray">Пн – Пт с 10:00 до 20:00</span></p>
+                        </div>
+                        <div class="col-md-3 footer_social hidden-xs hidden-sm">
+                                <div class="row">
+                                        <div class="col-md-3"><a href="#">
+                                                <i class="sprite_social sprite_social-social_vk"></i>
+                                        </a></div>
+                                        <div class="col-md-3"><a href="#">
+                                                <i class="sprite_social sprite_social-social_fb"></i>
+                                        </a></div>
+                                        <div class="col-md-3"><a href="#">
+                                                <i class="sprite_social sprite_social-social_odn"></i>
+                                        </a></div>
+                                        <div class="col-md-3"><a href="#">
+                                                <i class="sprite_social sprite_social-social_youtube"></i>
+                                        </a></div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</footer>
+<!-- //footer -->
+<script src="js/menu.js"></script>
+</body>
+</html>

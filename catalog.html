@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- callback modal -->
+<div class="modal fade" id="callModal">
+    <div class="modal-dialog modal-xs">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="small_form" method="post">
+                    <input type="text" name="name" placeholder="Ваше имя" required />
+                    <input type="text" name="phone" placeholder="Ваш телефон" required />
+                    <input type="submit" class="base_btn" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //callback modal -->
+<!-- header -->
+<header class="border">
+    <div class="main_header background_gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 hidden-xs hidden-sm">
+                    <div class="accordion_menu base_background clearfix">
+                        <div class="nav_toggle pull-left">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h4 class="caption">Каталог товаров</h4>
+                        <i class="fa fa-angle-down pull-right arrow"></i>
+                        <ul class="second_level_menu base_background">
+                            <li><a href="#">Дрель</a></li>
+                            <li><a href="#">Бензопила</a></li>
+                            <li><a href="#">И еще дрель</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <ul class="top_nav" id="topNav">
+                        <li><a href="#" class="text_gray">
+                            Новости
+                        </a></li>
+                        <li><a href="#" class="text_gray">
+                            Фото товаров
+                        </a></li>
+                        <li><a href="#" class="text_gray">
+                            Доставка и оплата
+                        </a></li>
+                        <li><a href="#" class="text_gray">
+                            Контакты
+                        </a></li>
+                        <li><a href="#" class="text_gray search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a></li>
+                        <li class="visible-xs visible-sm close_toggle" id="closeToggle">
+                            <i class="fa fa-times"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="header_mobile visible-xs visible-sm">
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <a id="navToggle" class="nav_mobile pull-left">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+
+                    <div class="logo_mobile clearfix">
+
+
+                        <div class="brand pull-left">
+                            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="brand_text pull-left">
+                            <h3 class="up">
+                                -Shopping
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="cart_mobile pull-right circle_sticker">
+                        <a href="#">
+                            <img src="img/cart_icon.png" alt="cart" class="img-responsive"/>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="second_header hidden-xs hidden-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 brand">
+                    <div class="media">
+                        <a class="media-left" href="index.html">
+                            <img class="media-object" src="img/logo.png" alt="logo" />
+                        </a>
+                        <div class="media-body">
+                    <span class="media-heading brand_caption">
+                    -Shopping
+                    </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 header_contact">
+                    <h3>+7 (812) 123-45-67</h3>
+                    <a href="#callModal" class="text_gray" data-toggle="modal">Заказать звонок</a>
+                </div>
+                <div class="col-md-3 header_adress">
+                    <p class="text_gray small_font">Санкт-Петербург, ул. Добрая, 55</p>
+                    <p class="text_gray small_font">Пн – Пт с 10:00 до 20:00</p>
+                </div>
+                <div class="col-md-3 header_cart">
+                    <div class="media">
+                        <a class="media-left cart_link circle_sticker" href="#">
+                            <img src="img/cart_icon.png" alt="cart" class="media-object" />
+                        </a>
+                        <div class="media-body">
+                            <span>У вас 2 товара на <strong>1 900 <i class="fa fa-ruble"></i></strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- //header -->
+<main>
+    <div class="catalog_page">
+        <div class="container">
+            <div class="row hidden-xs hidden-sm">
+                <div class="col-xs-12">
+                    <div class="breadcoumbs">
+                        <ul>
+                            <li><a href="#">Каталог товаров</a></li>
+                            <li><i class="fa fa-long-arrow-right"></i></li>
+                            <li><a href="#">Электродрели</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                <div class="section_capt small_padd">
+                    <h2>Электродрели</h2>
+                    <a href="#" class="back_link">
+                        <img src="img/circle_arrow_left.png" alt="back" />
+                    </a>
+                </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="sort_row background_gray clearfix">
+                        <ul class="pull-left list_inline sort">
+                            <li class="text_gray">Сортировать по:</li>
+                            <li><a href="#"class="text_gray">Названию</a></li>
+                            <li><a href="#" class="text_gray active">Цене</a></li>
+                        </ul>
+                        <ul class="pull-right list_inline views hidden-xs hidden-sm">
+                            <li><a href="#"><i class="sprite_views sprite_views-view_lg_green"></i></a></li>
+                            <li><a href="catalog_list.html"><i class="sprite_views sprite_views-view_list_gray"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="shop_items clearfix">
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Зелёный лобзик, жужжит когда пилишь</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>3 500 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Болгарка BOSCH зелёная,
+                                    а ручка чёрная</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_2.png" />
+                            </div>
+                            <div class="item_price clearfix">
+                                <h3 class="pull-left"><del>12 990</del> <i class="fa fa-ruble"></i></h3>
+                                <h3 class="pull-right">10 990 <i class="fa fa-ruble"></i></h3>
+                            </div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Шуруповёрт DrWalt c аккумулятором</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_3.png" />
+                            </div>
+                            <div class="item_price"><h3>1 900 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Дрель Bosch S345-57</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>7 200 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Зелёный лобзик, жужжит когда пилишь</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>3 500 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Зелёный лобзик, жужжит когда пилишь</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>3 500 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+            </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Зелёный лобзик, жужжит когда пилишь</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>3 500 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+        </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Зелёный лобзик, жужжит когда пилишь</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>3 500 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+    </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Зелёный лобзик, жужжит когда пилишь</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>3 500 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Зелёный лобзик, жужжит когда пилишь</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>3 500 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Зелёный лобзик, жужжит когда пилишь</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>3 500 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Зелёный лобзик, жужжит когда пилишь</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>3 500 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="shop_more">
+                    <a href="#" class="btn_transparent btn_mob_medium">Показать еще <i class="visible-xs visible-sm fa fa-angle-right"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+</main>
+<!-- footer -->
+<div class="pre_footer"></div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-md-3 footer_copy">
+                <p><span class="text_gray">
+               Сайт создан бесплатно на 1С-UMI
+           </span></p>
+                <p><span class="text_gray">Работает на UMI.CMS</span></p>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-sm-offset-2 col-xs-offset-0 col-md-offset-0 col-lg-offset-0 col-md-3 footer_phone">
+                <h3>
+                    +7 (812) 123-45-67
+                </h3>
+                <div class="row visible-xs visible-sm footer_social_mobile">
+                    <div class="col-xs-3"><a href="#">
+                        <i class="sprite_social sprite_social-social_vk"></i>
+                    </a></div>
+                    <div class="col-xs-3"><a href="#">
+                        <i class="sprite_social sprite_social-social_fb"></i>
+                    </a></div>
+                    <div class="col-xs-3">
+                        <i class="sprite_social sprite_social-social_odn"></i
+                        ><a href="#">
+
+                    </a></div>
+                    <div class="col-xs-3"><a href="#">
+                        <i class="sprite_social sprite_social-social_youtube"></i>
+                    </a></div>
+                </div>
+            </div>
+            <div class="col-md-3 footer_info hidden-xs hidden-sm">
+                <p><span class="text_gray">Санкт-Петербург, ул. Добрая, 55</span></p>
+                <p><span class="text_gray">Пн – Пт с 10:00 до 20:00</span></p>
+            </div>
+            <div class="col-md-3 footer_social hidden-xs hidden-sm">
+                <div class="row">
+                    <div class="col-md-3"><a href="#">
+                        <i class="sprite_social sprite_social-social_vk"></i>
+                    </a></div>
+                    <div class="col-md-3"><a href="#">
+                        <i class="sprite_social sprite_social-social_fb"></i>
+                    </a></div>
+                    <div class="col-md-3"><a href="#">
+                        <i class="sprite_social sprite_social-social_odn"></i>
+                    </a></div>
+                    <div class="col-md-3"><a href="#">
+                        <i class="sprite_social sprite_social-social_youtube"></i>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- //footer -->
+<script src="js/menu.js"></script>
+</body>
+</html>

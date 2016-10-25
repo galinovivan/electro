@@ -9,6 +9,23 @@
     background-repeat: no-repeat;
     background-position: 10% 50%;
   }
+  &.lg {
+    width: 260px;
+   @media screen and (max-width: 1200px) {
+     width: 200px;
+   }
+  }
+  &.no_cent {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &.mob_lg {
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      font-size: @h2_small - 2;
+      font-family: @mediumFont;
+    }
+  }
 }
 .btn_transparent {
   .btn_style();
@@ -20,6 +37,15 @@
   i {
     margin-left: 20px;
     font-size: 25px;
+  }
+  &.btn_mob_medium {
+    @media screen and (max-width: 991px) {
+      width: 260px;
+      padding: 10px 0;
+      i {
+        display: inline-block !important;
+      }
+    }
   }
 }
 

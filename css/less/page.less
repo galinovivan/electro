@@ -228,3 +228,138 @@ padding-top: 85px;
     }
   }
 }
+.sort_row {
+  margin-bottom: 30px;
+  padding: 15px 30px;
+  .sort {
+    li {
+      margin-right: 15px;
+      a {
+        &.active {
+          color: @base_color;
+        }
+      }
+    }
+  }
+  .views {
+    li {
+      margin-left: 18px;
+      a {
+        .img_hover();
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    background: transparent;
+    margin: 30px 0;
+    padding: 0;
+    .sort {
+      float: none !important;
+      .align();
+      a,
+      li {
+        font-size: @baseFontSize + 2;
+      }
+    }
+  }
+}
+.catalog_page {
+  .shop_items {
+    margin-bottom: 63px;
+  }
+}
+.catalog_list {
+  .shop_more {
+    margin-top: 45px;
+  }
+  .sort_row {
+    margin-bottom: 0;
+  }
+}
+
+.shop_more {
+  margin-bottom: 60px;
+  a {
+    .margin_align();
+  }
+}
+
+.cart {
+  margin-bottom: 80px;
+  & > .container {
+    border: 1px solid @bord_color;
+  }
+  .cart_item {
+    .flex-align();
+    padding: 70px 50px 30px 50px;
+    border-bottom: 1px solid @bord_color;
+    .flex-align();
+  }
+  .result_row {
+    padding: 30px 0;
+    h2 {
+      margin: 15px 0 20px 0;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    margin-top: 35px;
+    & > .container {
+      border: none;
+    }
+  }
+  .count {
+    span {
+      float: left;
+      border: 1px solid @bord_color;
+      padding: 12px 0;
+      .align();
+    }
+    .char {
+      cursor: pointer;
+      width: 45px;
+      height: 45px;
+    }
+    .result {
+      width: 70px;
+      height: 45px;
+    }
+  }
+  .item_title {
+    p {
+      line-height: 1.6;
+    }
+  }
+}
+.cart_mobile_item {
+  width: 80%;
+  height: 285px;
+  .shadow(@base_shadow);
+  .margin_align();
+  margin-bottom: 25px;
+  & > div {
+    height: 285px;
+  }
+  .item_thumb {
+    .flex-align();
+    img {
+      .margin_align();
+    }
+  }
+  .item_summary {
+    padding: 20px 15px 40px 15px;
+    .item_title {
+      margin-bottom: 30px;
+    }
+    .count {
+      margin-bottom: 30px;
+    }
+  }
+
+}
+.mobile_result_row {
+  width: 80%;
+  .margin_align();
+  .result {
+    margin-bottom: 35px;
+  }
+}
