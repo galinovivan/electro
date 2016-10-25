@@ -13,6 +13,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- callback modal -->
+<div class="modal fade" id="callModal">
+    <div class="modal-dialog modal-xs">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="small_form" method="post">
+                    <input type="text" name="name" placeholder="Ваше имя" required />
+                    <input type="text" name="phone" placeholder="Ваш телефон" required />
+                    <input type="submit" class="base_btn" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //callback modal -->
 <!-- header -->
 <header class="border">
     <div class="main_header background_gray">
@@ -108,7 +128,7 @@
                 </div>
                 <div class="col-md-3 header_contact">
                     <h3>+7 (812) 123-45-67</h3>
-                    <a href="#" class="text_gray">Заказать звонок</a>
+                    <a href="#callModal" class="text_gray" data-toggle="modal">Заказать звонок</a>
                 </div>
                 <div class="col-md-3 header_adress">
                     <p class="text_gray small_font">Санкт-Петербург, ул. Добрая, 55</p>

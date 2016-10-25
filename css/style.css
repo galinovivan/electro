@@ -201,170 +201,6 @@ button:focus {
   width: 100%;
   height: auto;
 }
-.modal {
-  padding-right: 0 !important;
-}
-.modal .modal-dialog {
-  margin-left: auto;
-  margin-right: auto;
-}
-.modal .modal-header {
-  display: block;
-  margin: 0 auto;
-  border: none;
-  position: relative;
-}
-.modal .modal-header .modal-title {
-  text-align: center;
-}
-.modal .modal-header .close {
-  width: auto;
-  position: absolute;
-  right: 50px;
-  top: 0;
-  opacity: .6;
-}
-.modal .modal-header .close:hover {
-  background: none;
-  opacity: 1;
-}
-.modal .modal-content {
-  background: transparent;
-  padding: 45px 0;
-  margin: auto;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-}
-.modal form {
-  padding: 0 75px;
-}
-.modal form input:not([type="submit"]),
-.modal form textarea {
-  border: 1px solid #3b3b3b;
-  border-right: none;
-  border-left: none;
-  border-top: none;
-  margin-top: 0;
-  background: transparent;
-  display: block;
-  padding: 10px 0;
-  width: 100%;
-  margin-bottom: 30px;
-}
-.modal form input:not([type="submit"])::-webkit-input-placeholder,
-.modal form textarea::-webkit-input-placeholder {
-  color: #3b3b3b;
-  font-size: 16px;
-}
-.modal form input:not([type="submit"])::-moz-placeholder,
-.modal form textarea::-moz-placeholder {
-  color: #3b3b3b;
-  font-size: 16px;
-}
-.modal form input:not([type="submit"]):-moz-placeholder,
-.modal form textarea:-moz-placeholder {
-  color: #3b3b3b;
-  font-size: 16px;
-}
-.modal form input:not([type="submit"])::-moz-placeholder,
-.modal form textarea::-moz-placeholder {
-  color: #3b3b3b;
-  font-size: 16px;
-}
-.modal form input:not([type="submit"]):-moz-placeholder,
-.modal form textarea:-moz-placeholder {
-  color: #3b3b3b;
-  font-size: 16px;
-}
-.modal form input[type="submit"] {
-  padding: 13px;
-  width: 100%;
-  background: #ff7a18;
-  border: none;
-  color: #ffffff;
-  font-family: 'roboto_medium';
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}
-.modal form input[type="submit"]:hover {
-  background: #fe6c00;
-  color: #ffffff;
-  text-decoration: none;
-}
-@media screen and (max-width: 991px) {
-  .modal form input[type="submit"] {
-    width: 100%;
-    padding: 17px;
-  }
-  .modal form input:not([type="submit"])::-webkit-input-placeholder,
-  .modal form textarea::-webkit-input-placeholder {
-    color: #3b3b3b;
-    font-size: 26px;
-  }
-  .modal form input:not([type="submit"])::-moz-placeholder,
-  .modal form textarea::-moz-placeholder {
-    color: #3b3b3b;
-    font-size: 26px;
-  }
-  .modal form input:not([type="submit"]):-moz-placeholder,
-  .modal form textarea:-moz-placeholder {
-    color: #3b3b3b;
-    font-size: 26px;
-  }
-  .modal form input:not([type="submit"])::-moz-placeholder,
-  .modal form textarea::-moz-placeholder {
-    color: #3b3b3b;
-    font-size: 26px;
-  }
-  .modal form input:not([type="submit"]):-moz-placeholder,
-  .modal form textarea:-moz-placeholder {
-    color: #3b3b3b;
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .modal form {
-    padding: 0 30px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .modal .modal-dialog {
-    width: 90%;
-  }
-  .modal .modal-dialog .modal-content form input:not([type="submit"])::-webkit-input-placeholder {
-    color: #3b3b3b;
-    font-size: 26px;
-  }
-  .modal .modal-dialog .modal-content form input:not([type="submit"])::-moz-placeholder {
-    color: #3b3b3b;
-    font-size: 26px;
-  }
-  .modal .modal-dialog .modal-content form input:not([type="submit"]):-moz-placeholder {
-    color: #3b3b3b;
-    font-size: 26px;
-  }
-  .modal .modal-dialog .modal-content form input:not([type="submit"])::-moz-placeholder {
-    color: #3b3b3b;
-    font-size: 26px;
-  }
-  .modal .modal-dialog .modal-content form input:not([type="submit"]):-moz-placeholder {
-    color: #3b3b3b;
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .modal .modal-dialog {
-    width: 95%;
-  }
-  .modal .modal-dialog .modal-content form {
-    padding: 0 10px;
-    width: 100%;
-  }
-}
 .circle_sticker {
   position: relative;
 }
@@ -916,6 +752,15 @@ footer i:hover {
 .order_page .form_container .order_form {
   width: 75%;
   margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  .order_page .form_container {
+    margin-bottom: 5px;
+    border: none;
+  }
+  .order_page .form_container .order_form {
+    width: 85%;
+  }
 }
 .accordion_menu {
   padding: 19px;
@@ -1499,25 +1344,29 @@ form.base_form textarea:-moz-placeholder {
   color: #acacac;
   font-size: 16px;
 }
-form.base_form input:not([type="submit"]).small,
-form.base_form textarea.small {
-  width: 48%;
-}
-form.base_form input:not([type="submit"]).inline_input,
-form.base_form textarea.inline_input {
-  display: inline-block;
-}
-form.base_form input:not([type="submit"]).inline_input:first-of-type,
-form.base_form textarea.inline_input:first-of-type {
-  margin-right: 2%;
+@media screen and (min-width: 991px) {
+  form.base_form input:not([type="submit"]).small,
+  form.base_form textarea.small {
+    width: 48%;
+  }
+  form.base_form input:not([type="submit"]).inline_input,
+  form.base_form textarea.inline_input {
+    display: inline-block;
+  }
+  form.base_form input:not([type="submit"]).inline_input:first-of-type,
+  form.base_form textarea.inline_input:first-of-type {
+    margin-right: 2%;
+  }
 }
 form.base_form input[type="submit"] {
   width: 50%;
   margin: 30px 0 0 0;
   font-family: 'roboto_light';
 }
-form.base_form input[type="submit"].small {
-  width: 30%;
+@media screen and (min-width: 991px) {
+  form.base_form input[type="submit"].small {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 991px) {
   form.base_form input:not([type="submit"])::-webkit-input-placeholder,
@@ -1549,6 +1398,56 @@ form.base_form input[type="submit"].small {
     width: 100%;
   }
 }
+form.base_form.small_marg input:not([type="submit"]),
+form.base_form.small_marg textarea {
+  margin-bottom: 8px;
+}
+form.small_form {
+  width: 100%;
+  background: #ffffff;
+}
+form.small_form input:not([type="submit"]),
+form.small_form textarea {
+  width: 100%;
+  border: 1px solid #f2f2f2;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+}
+form.small_form input[type="submit"] {
+  border: none;
+  width: 100%;
+}
 .form_heading {
   margin-bottom: 35px;
+}
+.form_heading p,
+.form_heading h2 {
+  display: inline-block;
+}
+.form_heading p {
+  margin-right: 15px;
+}
+.form_heading i.fa-ruble {
+  font-size: 30px;
+}
+@media screen and (max-width: 991px) {
+  .form_heading {
+    text-align: center;
+  }
+}
+.modal-dialog.modal-xs {
+  width: 300px;
+}
+.modal-dialog .modal-content {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+.modal-dialog .modal-content .modal-header {
+  padding-bottom: 0;
+  border: none;
+}
+.modal-dialog .modal-content .modal-header .close {
+  width: auto;
+  height: auto;
 }

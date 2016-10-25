@@ -161,70 +161,70 @@ button {
     height: auto;
   }
 }
-.modal {
-  padding-right: 0 !important;
-  .modal-dialog {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .modal-header {
-    .margin_align();
-    border: none;
-    position: relative;
-    .modal-title {
-      .align();
-
-    }
-    .close {
-      width: auto;
-      position: absolute;
-      right: 50px;
-      top: 0;
-      opacity: .6;
-      &:hover {
-        background: none;
-        opacity: 1;
-      }
-    }
-  }
-  .modal-content {
-    background: @modalBackground;
-    padding: 45px 0;
-    margin: auto;
-    .radius(0);
-  }
-  form {
-    .light_form();
-    padding: 0 75px;
-    @media screen and (max-width: 991px) {
-      padding: 0 30px;
-    }
-  }
-  @media screen and (max-width: 991px) {
-    .modal-dialog {
-      width: 90%;
-      .modal-content {
-        form {
-          input:not([type="submit"]) {
-            .placeholder_style(@black, @h3_size);
-            .moz_placeholder_style(@black, @h3_size);
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 320px) {
-    .modal-dialog {
-      width: 95%;
-      .modal-content {
-        form {
-          padding: 0 10px;
-          width: 100%;
-        }
-      }
-    }
-  }
-}
+//.modal {
+//  padding-right: 0 !important;
+//  .modal-dialog {
+//    margin-left: auto;
+//    margin-right: auto;
+//  }
+//  .modal-header {
+//    .margin_align();
+//    border: none;
+//    position: relative;
+//    .modal-title {
+//      .align();
+//
+//    }
+//    .close {
+//      width: auto;
+//      position: absolute;
+//      right: 50px;
+//      top: 0;
+//      opacity: .6;
+//      &:hover {
+//        background: none;
+//        opacity: 1;
+//      }
+//    }
+//  }
+//  .modal-content {
+//    background: @modalBackground;
+//    padding: 45px 0;
+//    margin: auto;
+//    .radius(0);
+//  }
+//  form {
+//    .light_form();
+//    padding: 0 75px;
+//    @media screen and (max-width: 991px) {
+//      padding: 0 30px;
+//    }
+//  }
+//  @media screen and (max-width: 991px) {
+//    .modal-dialog {
+//      width: 90%;
+//      .modal-content {
+//        form {
+//          input:not([type="submit"]) {
+//            .placeholder_style(@black, @h3_size);
+//            .moz_placeholder_style(@black, @h3_size);
+//          }
+//        }
+//      }
+//    }
+//  }
+//  @media screen and (max-width: 320px) {
+//    .modal-dialog {
+//      width: 95%;
+//      .modal-content {
+//        form {
+//          padding: 0 10px;
+//          width: 100%;
+//        }
+//      }
+//    }
+//  }
+//}
 .circle_sticker {
   .circle_sticker_style();
   &::after {
