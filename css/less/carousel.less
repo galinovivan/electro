@@ -94,3 +94,43 @@
 #mobileBottomCarousel {
   padding: 0 30px;
 }
+// previewCarousel
+#previewCarousel {
+  .item {
+    height: 390px;
+    img {
+      .margin_align();
+    }
+  }
+}
+.carousel_preview {
+  .carousel-indicators {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-left: auto;
+    width: 100%;
+    li {
+      width: 25%;
+      height: 75px;
+      display: block;
+      float: left;
+      margin: 0;
+      border: 1px solid @bord_color;
+      .radius(0);
+      padding: 10px 0;
+      img {
+        .margin_align();
+      }
+      &.green_bord {
+        border-color: @second_base_color;
+      }
+    }
+  }
+}
+
+.prev_control {
+  bottom: 6%;
+  top: auto;
+}
+// previewCarousel

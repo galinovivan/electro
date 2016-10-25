@@ -943,6 +943,16 @@ footer i:hover {
 .mobile_result_row .result {
   margin-bottom: 35px;
 }
+.item_page .item_post {
+  margin-bottom: 30px;
+}
+.item_page .item_post .item_prev {
+  padding: 50px 0 65px 0;
+  box-shadow: 0 0 10px 6px #f9f9f9;
+  -webkit-box-shadow: 0 0 10px 6px #f9f9f9;
+  -moz-box-shadow: 0 0 10px 6px #f9f9f9;
+  -o-box-shadow: 0 0 10px 6px #f9f9f9;
+}
 .accordion_menu {
   padding: 19px;
   cursor: pointer;
@@ -1344,6 +1354,43 @@ header.border {
 }
 #mobileBottomCarousel {
   padding: 0 30px;
+}
+#previewCarousel .item {
+  height: 390px;
+}
+#previewCarousel .item img {
+  display: block;
+  margin: 0 auto;
+}
+.carousel_preview .carousel-indicators {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.carousel_preview .carousel-indicators li {
+  width: 25%;
+  height: 75px;
+  display: block;
+  float: left;
+  margin: 0;
+  border: 1px solid #f2f2f2;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  padding: 10px 0;
+}
+.carousel_preview .carousel-indicators li img {
+  display: block;
+  margin: 0 auto;
+}
+.carousel_preview .carousel-indicators li.green_bord {
+  border-color: #9eda36;
+}
+.prev_control {
+  bottom: 6%;
+  top: auto;
 }
 .shop_items .wrapper {
   padding: 10px 0;
