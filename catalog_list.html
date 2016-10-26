@@ -33,6 +33,29 @@
     </div>
 </div>
 <!-- //callback modal -->
+<!-- poor panel -->
+<div class="poor_panel hidden-xs hidden-sm" id="poorPanel">
+    <a href="#" id="imgControl">Вкл/выкл изображения</a>
+    <a href="#" class="contrast_btn" id="black"></a>
+    <a href="#" class="contrast_btn" id="blue"></a>
+    <a href="#" class="contrast_btn" id="white"></a>
+    <a href="#" class="resize_btn active" id="smallSize">
+        A
+    </a>
+    <a href="#" class="resize_btn" id="mediumSize">
+        A
+    </a>
+    <a href="#" class="resize_btn" id="largeSize">
+        A
+    </a>
+    <a id="normalVision" href="#">Обычная версия</a>
+</div>
+<div class="poor_btn black hidden-xs hidden-sm">
+    <a id="poorVision" href="#">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+    </a>
+</div>
+<!-- // poor panel -->
 <!-- header -->
 <header class="border">
     <div class="main_header background_gray">
@@ -55,7 +78,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-6 col-xs-12">
+                <div class="col-md-6 col-xs-12 poor_full_width">
                     <ul class="top_nav" id="topNav">
                         <li><a href="#" class="text_gray">
                             Новости
@@ -359,5 +382,6 @@
 </footer>
 <!-- //footer -->
 <script src="js/menu.js"></script>
+<script src="js/poor_vision.js"></script>
 </body>
 </html>

@@ -15,12 +15,32 @@
 
 </head>
 <body>
+<!-- callback modal -->
+<div class="modal fade" id="callModal">
+    <div class="modal-dialog modal-xs">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="small_form" method="post">
+                    <input type="text" name="name" placeholder="Ваше имя" required />
+                    <input type="text" name="phone" placeholder="Ваш телефон" required />
+                    <input type="submit" class="base_btn" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //callback modal -->
 <!-- header -->
 <header>
     <div class="main_header background_gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 hidden-xs hidden-sm">
+                <div class="col-md-6 hidden-xs hidden-sm poor_full_width">
                 <div class="accordion_menu base_background clearfix">
                     <div class="nav_toggle pull-left">
                         <span></span>
@@ -37,7 +57,7 @@
                 </div>
 
                 </div>
-                <div class="col-md-6 col-xs-12">
+                <div class="col-md-6 col-xs-12 poor_full_width">
                     <ul class="top_nav" id="topNav">
                         <li><a href="#" class="text_gray">
                             Новости
@@ -110,7 +130,7 @@
                 </div>
                 <div class="col-md-3 header_contact">
                     <h3>+7 (812) 123-45-67</h3>
-                    <a href="#" class="text_gray">Заказать звонок</a>
+                    <a href="#callModal" class="text_gray" data-toggle="modal">Заказать звонок</a>
                 </div>
                 <div class="col-md-3 header_adress">
                     <p class="text_gray small_font">Санкт-Петербург, ул. Добрая, 55</p>
@@ -131,6 +151,29 @@
     </div>
 </header>
 <!-- //header -->
+<!-- poor panel -->
+<div class="poor_panel hidden-xs hidden-sm" id="poorPanel">
+    <a href="#" id="imgControl">Вкл/выкл изображения</a>
+    <a href="#" class="contrast_btn" id="black"></a>
+    <a href="#" class="contrast_btn" id="blue"></a>
+    <a href="#" class="contrast_btn" id="white"></a>
+    <a href="#" class="resize_btn active" id="smallSize">
+        A
+    </a>
+    <a href="#" class="resize_btn" id="mediumSize">
+        A
+    </a>
+    <a href="#" class="resize_btn" id="largeSize">
+        A
+    </a>
+    <a id="normalVision" href="#">Обычная версия</a>
+</div>
+<div class="poor_btn black hidden-xs hidden-sm">
+    <a id="poorVision" href="#">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+    </a>
+</div>
+<!-- // poor panel -->
 <main>
     <div class="main_carousel">
     <div class="container-fluid full_width">
@@ -713,5 +756,6 @@
 </footer>
 <!-- //footer -->
 <script src="js/menu.js"></script>
+<script src="js/poor_vision.js"></script>
 </body>
 </html>
