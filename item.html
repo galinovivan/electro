@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 <!-- callback modal -->
 <div class="modal fade" id="callModal">
     <div class="modal-dialog modal-xs">
@@ -150,12 +151,14 @@
 <!-- //header -->
 <main>
     <div class="item_page">
-        <div class="container">
+        <div class="container mobile_fluid">
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="breadcoumbs">
+                    <div class="breadcoumbs hidden-xs hidden-sm">
                         <ul>
                             <li><a href="#">Каталог товаров</a></li>
+                            <li><i class="fa fa-long-arrow-right"></i></li>
+                            <li><a href="#">Электродрели</a></li>
                             <li><i class="fa fa-long-arrow-right"></i></li>
                             <li><a href="#">Электродрели</a></li>
                         </ul>
@@ -163,22 +166,29 @@
                 </div>
             </div>
             <div class="row">
-                <div class="section_capt small_padd">
+                <div class="section_capt medium_padd">
                     <h2>Дрель Hammer DRL400C Premium</h2>
+                    <a class="back_link visible-xs visible-sm"><img src="img/circle_arrow_left.png" alt="back" /> </a>
                 </div>
             </div>
         </div>
         <div class="item_post">
-            <div class="container">
+            <div class="container mobile_fluid">
                 <div class="row">
-                <div class="col-md-6 item_prev">
-                    <a href="#previewCarousel" class="carousel-control left prev_control" data-slide="prev">
+                <div class="col-xs-12 col-md-6 item_prev mobile_full">
+                    <a href="#previewCarousel" class="carousel-control left prev_control hidden-xs hidden-sm" data-slide="prev">
                         <img src="img/circle_arrow_left.png" alt="prev" />
                     </a>
-                    <a href="#previewCarousel" class="carousel-control right prev_control" data-slide="next">
+                    <a href="#previewCarousel" class="carousel-control right prev_control hidden-xs hidden-sm" data-slide="next">
                         <img src="img/circle_arrow_right.png" alt="next" />
                     </a>
                     <div class="carousel slide" data-ride="carousel" data-interval="10000" id="previewCarousel">
+                        <ol class="visible-xs visible-sm carousel-indicators">
+                            <li class="active" data-slide-to="0" data-target="#previewCarousel"></li>
+                            <li data-slide-to="1" data-target="#previewCarousel"></li>
+                            <li data-slide-to="2" data-target="#previewCarousel"></li>
+                            <li data-slide-to="3" data-target="#previewCarousel"></li>
+                        </ol>
                         <div class="carousel-inner">
                             <div class="item active">
                                 <img src="img/item_thumb.png" alt="item" class="img-responsive" />
@@ -194,7 +204,7 @@
                             </div>
                             </div>
                         </div>
-                    <div class="row carousel_preview">
+                    <div class="row carousel_preview hidden-xs hidden-sm">
                         <div class="col-md-offset-2 col-md-8">
                             <ol class="carousel-indicators clearfix">
                                 <li class="active" data-slide-to="0" data-target="#previewCarousel">
@@ -213,16 +223,186 @@
                         </div>
                     </div>
                     </div>
-                <div class="col-md-6 item_opions background_gray">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2></h2>
+                <div class="col-md-6 item_options background_gray mobile_full">
+                    <div class="row options_header">
+                        <div class="col-md-5 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-6">
+                            <h2>6 469 <i class="fa fa-ruble"></i></h2>
+                                    </div>
+                                <div class="col-xs-6 col-md-12 item_count">
+                            <span><i class="check"></i>Кол-во на складе: <strong>54</strong></span>
+                                    </div>
                         </div>
-                        <div class="col-md-6"></div>
+                            </div>
+                        <div class="col-md-7 col-xs-12">
+                            <a href="#" class="base_btn order_btn small mob_lg">Заказать</a>
+                        </div>
                 </div>
+                    <div class="row option_list">
+                        <div class="col-md-9 col-xs-12">
+                            <ul>
+                                <li><span>Мощность</span><span class="text_gray">...............................................................</span><span> 400ВТ</span> </li>
+                                <li><span>Скорости</span><span class="text_gray">..................................................................</span><span> 1</span></li>
+                                <li><span>Макс. обороты</span><span class="text_gray">........................................................</span><span> 2700 об/мин</span></li>
+                                <li><span>Диаметр патрона</span><span class="text_gray">...................................................</span><span> 10 мм</span></li>
+                                <li><span>Тип патрона</span><span class="text_gray">..............................................................</span><span>БЗП</span></li>
+                                <li><span>Быстрозажимной патрон</span><span class="text_gray">......................................</span><span> +</span></li>
+                                <li><span>Тип дрели</span><span class="text_gray">..................................................................</span><span> Стандартная</span></li>
+                                <li><span>Макс. диаметр сверления (дерево) </span><span class="text_gray">.....................</span><span> 20 мм</span></li>
+                                <li><span>Макс. диаметр сверления (металл)  </span><span class="text_gray">.....................</span><span> 10 мм</span></li>
+                                <li><span>Реверс  </span><span class="text_gray">........................................................................</span><span> + </span></li>
+                                <li><span>Вес брутто  </span><span class="text_gray">.................................................................</span><span> 1.65 кг </span></li>
+                            </ul>
+                        </div>
+                    </div>
             </div>
         </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-6 item_add_review background_gray mobile_full hidden-xs hidden-sm">
+                        <h3 class="small form_heading">Добавить отзыв</h3>
+                        <div class="raiting">
+                            <span>Ваша оценка </span> <i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <form class="base_form" method="post">
+                            <textarea name="review" id="" cols="30" rows="8">
+                                А вот здесь пишем отзыв
+                            </textarea>
+                            <div class="capch_input clearfix">
+                                <img src="img/capch.png" alt="capch" class="pull-left" />
+                                <input name="captch" type="text" class="pull-left" />
+                                <input type="submit" value="ОТПРАВИТЬ" class="btn_transparent pull-right small" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 item_about mobile_full">
+                        <div class="summary">
+                            <h3 class="small">
+                                Описание
+                            </h3>
+                            <span>Универсальный трехрежимный агрегат (пять буров прилагаются бесплатно).
+                                Особенности модели: Потребляемая мощность мотора – 780 Ватт; 4500
+                                уд/минуту при силе единичного – 2,7Дж; выбор скорости. Возможность установки долота
+                                в одно из сорока различных положений. Модифицированный ударный механизм, снижающий вибрацию.</span>
+                        </div>
+                        <div class="social_count">
+                            <div class="soc_count fb_count">
+                                <span><i class="sprite_count sprite_count-count_fb"></i></span>
+                                <span>12</span>
+                            </div>
+                            <div class="soc_count vk_count">
+                                <span><i class="sprite_count sprite_count-count_vk"></i></span>
+                                <span>78</span>
+                            </div>
+                            <div class="soc_count tw_count">
+                                <span><i class="sprite_count sprite_count-count_tw"></i></span>
+                                <span>89</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 item_add_review background_gray mobile_full col-xs-12">
+                        <h3 class="small form_heading">Добавить отзыв</h3>
+                        <div class="raiting">
+                            <span>Ваша оценка </span> <i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <form class="base_form" method="post">
+                            <textarea name="review" cols="30" rows="8">
+                                А вот здесь пишем отзыв
+                            </textarea>
+                                <input type="submit" value="ОТПРАВИТЬ" class="btn_transparent pull-right small mob_small" />
+                        </form>
+                    </div>
+                </div>
     </div>
+            <div class="container" style="padding: 0 40px;">
+                <div class="row">
+                    <div class="section_capt mob_h3_size no_bord">
+                        <h2>Похожие модели</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="shop_items clearfix">
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Зелёный лобзик, жужжит когда пилишь</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>3 500 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Болгарка BOSCH зелёная,
+                                    а ручка чёрная</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_2.png" />
+                            </div>
+                            <div class="item_price clearfix">
+                                <h3 class="pull-left"><del>12 990</del> <i class="fa fa-ruble"></i></h3>
+                                <h3 class="pull-right">10 990 <i class="fa fa-ruble"></i></h3>
+                            </div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wrapper hidden-xs hidden-sm">
+                        <div class="shop_item">
+                            <div class="item_title">
+                                <p>Шуруповёрт DrWalt c аккумулятором</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_3.png" />
+                            </div>
+                            <div class="item_price"><h3>1 900 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 wrapper">
+                        <div class="shop_item hidden-xs hidden-sm">
+                            <div class="item_title">
+                                <p>Дрель Bosch S345-57</p>
+                            </div>
+                            <div class="item_thumb img_wrapper">
+                                <img src="img/catalog_item_1.png" />
+                            </div>
+                            <div class="item_price"><h3>7 200 <i class="fa fa-ruble"></i></h3></div>
+                            <div class="item_btn visible-xs visible-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                            <div class="hide_btn hidden-xs hidden-sm">
+                                <a class="order_btn base_btn">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                    </div>
+            </div>
+            </div>
+        </div>
 </main>
 <!-- footer -->
 <div class="pre_footer"></div>
@@ -280,4 +460,6 @@
     </div>
 </footer>
 <!-- //footer -->
+<script src="js/menu.js"></script>
+</body>
 </html>

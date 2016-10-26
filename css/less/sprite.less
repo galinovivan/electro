@@ -82,3 +82,29 @@
 }
 // catalog views sprite
 
+// social count
+.stitches-sprite_count(@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+}
+
+.sprite_count {
+  background-image: url('../img/sprite_social_count.png');    background-repeat: no-repeat;
+  display: block;
+
+  &.sprite_count-count_fb {
+    .stitches-sprite_count(-5px, -5px, 19px, 16px);
+  }
+
+  &.sprite_count-count_tw {
+    .stitches-sprite_count(-34px, -5px, 18px, 15px);
+  }
+
+  &.sprite_count-count_vk {
+    .stitches-sprite_count(-34px, -30px, 23px, 13px);
+  }
+}
+
+//social_count
+

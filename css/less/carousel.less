@@ -70,7 +70,7 @@
 .category_controls {
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 60px;
   a {
     opacity: .7;
     .transition_fast();
@@ -91,6 +91,11 @@
     }
   }
 }
+.circle_control {
+  width: 40px;
+  height: auto;
+  top: 60px;
+}
 #mobileBottomCarousel {
   padding: 0 30px;
 }
@@ -100,6 +105,16 @@
     height: 390px;
     img {
       .margin_align();
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .carousel-indicators {
+      width: 60% !important;
+      margin-left: -30% !important;
+      .carousel_indicators_style(10px, 10px);
+      li {
+        border-color: @base_color;
+      }
     }
   }
 }
@@ -130,7 +145,7 @@
 }
 
 .prev_control {
-  bottom: 6%;
+  bottom: 95px;
   top: auto;
 }
 // previewCarousel
