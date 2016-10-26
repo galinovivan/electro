@@ -1,0 +1,36 @@
+
+
+
+html {
+  &.poor_vision {
+    body {
+      &.large_size {
+        p
+         {
+          font-size: @baseFontSize * 2 !important;
+        }
+        span {
+          font-size: @baseFontSize * 1.7 !important;
+        }
+        a {
+          font-size: @baseFontSize * 2 !important;
+        }
+        h3 {
+          font-size: @h3_size * 2 !important;
+        }
+        h2 {
+          font-size: @h2_size * 2 !important;
+        }
+        h4 {
+          font-size: @h4_size * 2 !important;
+        }
+        input,
+        textarea {
+          .placeholder_font_size(@baseFontSize * 2);
+          .moz_placeholder_font_size(@baseFontSize * 2);
+          font-size: @baseFontSize * 2 !important;
+        }
+      }
+    }
+  }
+}
