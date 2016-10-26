@@ -79,6 +79,24 @@
       .item_btn {
         margin-top: 30px;
       }
+      .hide_btn {
+        display: none !important;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      width: 100%;
+      .shop_item {
+        padding-left: 0;
+        .margin_align();
+        .item_thumb {
+          img {
+            max-width: 200px;
+            .margin_align();
+          }
+        }
+      }
     }
   }
 }

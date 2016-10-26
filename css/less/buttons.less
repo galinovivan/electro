@@ -68,7 +68,12 @@
   &.mob_small {
     @media screen and (max-width: 991px) {
       width: 50% !important;
-      background: url('../img/btn_arr.png') no-repeat 90%;
+      background-image: url('../img/btn_arr.png');
+      background-position: 90%;
+      background-repeat: no-repeat;
+    }
+    @media screen and (max-width: 430px) {
+      width: 100% !important;
     }
   }
 }

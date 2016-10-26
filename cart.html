@@ -13,7 +13,142 @@
         <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-foo
+<!-- callback modal -->
+<div class="modal fade" id="callModal">
+        <div class="modal-dialog modal-xs">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                        <i class="fa fa-times"></i>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+                                <form class="small_form" method="post">
+                                        <input type="text" name="name" placeholder="Ваше имя" required />
+                                        <input type="text" name="phone" placeholder="Ваш телефон" required />
+                                        <input type="submit" class="base_btn" value="ОТПРАВИТЬ">
+                                </form>
+                        </div>
+                </div>
+        </div>
+</div>
+<!-- //callback modal -->
+<!-- header -->
+<header class="border">
+        <div class="main_header background_gray">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-md-6 hidden-xs hidden-sm">
+                                        <div class="accordion_menu base_background clearfix">
+                                                <div class="nav_toggle pull-left">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                </div>
+                                                <h4 class="caption">Каталог товаров</h4>
+                                                <i class="fa fa-angle-down pull-right arrow"></i>
+                                                <ul class="second_level_menu base_background">
+                                                        <li><a href="#">Дрель</a></li>
+                                                        <li><a href="#">Бензопила</a></li>
+                                                        <li><a href="#">И еще дрель</a></li>
+                                                </ul>
+                                        </div>
+
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                        <ul class="top_nav" id="topNav">
+                                                <li><a href="#" class="text_gray">
+                                                        Новости
+                                                </a></li>
+                                                <li><a href="#" class="text_gray">
+                                                        Фото товаров
+                                                </a></li>
+                                                <li><a href="#" class="text_gray">
+                                                        Доставка и оплата
+                                                </a></li>
+                                                <li><a href="#" class="text_gray">
+                                                        Контакты
+                                                </a></li>
+                                                <li><a href="#" class="text_gray search">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                </a></li>
+                                                <li class="visible-xs visible-sm close_toggle" id="closeToggle">
+                                                        <i class="fa fa-times"></i>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+
+                </div>
+                <div class="header_mobile visible-xs visible-sm">
+                        <div class="container-fluid">
+                                <div class="row clearfix">
+                                        <a id="navToggle" class="nav_mobile pull-left">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                        </a>
+
+                                        <div class="logo_mobile clearfix">
+
+
+                                                <div class="brand pull-left">
+                                                        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                                                </div>
+                                                <div class="brand_text pull-left">
+                                                        <h3 class="up">
+                                                                -Shopping
+                                                        </h3>
+                                                </div>
+                                        </div>
+                                        <div class="cart_mobile pull-right circle_sticker">
+                                                <a href="#">
+                                                        <img src="img/cart_icon.png" alt="cart" class="img-responsive"/>
+                                                </a>
+                                        </div>
+                                </div>
+
+                        </div>
+                </div>
+        </div>
+        <div class="second_header hidden-xs hidden-sm">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-md-3 brand">
+                                        <div class="media">
+                                                <a class="media-left" href="index.html">
+                                                        <img class="media-object" src="img/logo.png" alt="logo" />
+                                                </a>
+                                                <div class="media-body">
+                    <span class="media-heading brand_caption">
+                    -Shopping
+                    </span>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-3 header_contact">
+                                        <h3>+7 (812) 123-45-67</h3>
+                                        <a href="#callModal" class="text_gray" data-toggle="modal">Заказать звонок</a>
+                                </div>
+                                <div class="col-md-3 header_adress">
+                                        <p class="text_gray small_font">Санкт-Петербург, ул. Добрая, 55</p>
+                                        <p class="text_gray small_font">Пн – Пт с 10:00 до 20:00</p>
+                                </div>
+                                <div class="col-md-3 header_cart">
+                                        <div class="media">
+                                                <a class="media-left cart_link circle_sticker" href="#">
+                                                        <img src="img/cart_icon.png" alt="cart" class="media-object" />
+                                                </a>
+                                                <div class="media-body">
+                                                        <span>У вас 2 товара на <strong>1 900 <i class="fa fa-ruble"></i></strong></span>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</header>
+<!-- //header -->
 <main>
         <div class="cart_page">
                 <div class="container">

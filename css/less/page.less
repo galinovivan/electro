@@ -7,6 +7,7 @@ background: @backgroundGray;
   .section_capt {
     margin-bottom: 45px;
     margin-top: -25px;
+    padding: 0;
   }
   .news_list {
     padding: 0 120px 0 55px;
@@ -62,7 +63,6 @@ background: @backgroundGray;
     }
     .section_capt {
       margin-top: 0;
-      padding: 0;
     }
     .news_list {
       border: 8px solid @second_base_color;
@@ -365,6 +365,16 @@ padding-top: 85px;
     }
     .count {
       margin-bottom: 30px;
+      @media screen and (max-width: 520px) {
+        .char {
+          width: 35px;
+          height: 45px;
+        }
+        .result {
+          width: 45px;
+          height: 45px;
+        }
+      }
     }
   }
 
@@ -432,6 +442,15 @@ padding-top: 85px;
         background: @backgroundGray;
         padding-top: 60px;
         padding-bottom: 60px;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      .options_header {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .option_list {
+        padding-left: 10px;
       }
     }
   }
