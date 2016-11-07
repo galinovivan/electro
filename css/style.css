@@ -924,6 +924,15 @@ footer i:hover {
     height: 45px;
   }
 }
+@media screen and (max-width: 400px) {
+  .cart_mobile_item {
+    height: 340px;
+  }
+  .cart_mobile_item .item_summary {
+    height: 340px;
+    padding: 10px 5px 0 0;
+  }
+}
 .mobile_result_row {
   width: 80%;
   display: block;
@@ -1502,6 +1511,14 @@ header.border {
   width: 40px;
   height: auto;
   top: 60px;
+}
+@media screen and (max-width: 991px) {
+  .circle_control.right {
+    right: 5%;
+  }
+  .circle_control.left {
+    left: 5%;
+  }
 }
 #mobileBottomCarousel {
   padding: 0 30px;
