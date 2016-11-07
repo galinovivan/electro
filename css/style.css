@@ -176,7 +176,7 @@ a:focus {
 button {
   width: 200px;
   font-size: 18px;
-  font-family: 'roboto_thin';
+  font-family: 'roboto_light';
   text-transform: uppercase;
   padding: 12px 0;
   cursor: pointer;
@@ -343,6 +343,7 @@ button:focus {
   position: relative;
 }
 .section_capt h2 {
+  letter-spacing: -2px;
   margin: 0;
 }
 .section_capt h2.white {
@@ -1069,11 +1070,11 @@ footer i:hover {
   }
 }
 .accordion_menu {
-  padding: 19px;
+  padding: 18px;
   cursor: pointer;
   position: relative;
   width: 50%;
-  height: 60px;
+  height: 55px;
   text-align: center;
 }
 .accordion_menu .caption {
@@ -1093,6 +1094,7 @@ footer i:hover {
 .accordion_menu .second_level_menu {
   display: none;
   width: 100%;
+  padding-left: 80px;
   position: absolute;
   bottom: -235px;
   left: 0;
@@ -1104,6 +1106,7 @@ footer i:hover {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+  text-align: left;
 }
 .accordion_menu .second_level_menu li {
   margin-bottom: 45px;
@@ -1160,7 +1163,7 @@ footer i:hover {
   display: block;
 }
 .top_nav {
-  height: 60px;
+  height: 55px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1197,7 +1200,7 @@ footer i:hover {
     z-index: 1000;
     overflow: scroll;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 24px;
     opacity: 0;
     -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
@@ -1225,7 +1228,7 @@ footer i:hover {
   .top_nav > li a {
     position: relative;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 24px;
   }
   .top_nav > li a.active {
     color: #ffffff;
@@ -1240,6 +1243,8 @@ footer i:hover {
     color: #ffffff;
   }
   .top_nav .close_toggle {
+    width: 35px;
+    height: 35px;
     position: absolute;
     right: 50px;
     top: 40px;
@@ -1312,7 +1317,7 @@ header.border {
   }
 }
 .main_header {
-  height: 60px;
+  height: 55px;
   border-bottom: 1px solid #f2f2f2;
 }
 .second_header {
@@ -1345,6 +1350,19 @@ header.border {
 }
 .second_header .header_cart span strong {
   font-family: 'open_sans_bold';
+}
+.second_header > .container > .row > div:not(:last-of-type) {
+  position: relative;
+}
+.second_header > .container > .row > div:not(:last-of-type)::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 55px;
+  background: #f2f2f2;
+  position: absolute;
+  right: 50px;
+  top: 10%;
 }
 @media screen and (max-width: 360px) {
   .header_mobile .logo_mobile .brand {
@@ -1684,7 +1702,7 @@ header.border {
 .base_btn {
   width: 200px;
   font-size: 18px;
-  font-family: 'roboto_thin';
+  font-family: 'roboto_light';
   text-transform: uppercase;
   padding: 12px 0;
   cursor: pointer;
@@ -1756,7 +1774,7 @@ header.border {
   display: block;
   width: 200px;
   font-size: 18px;
-  font-family: 'roboto_thin';
+  font-family: 'roboto_light';
   text-transform: uppercase;
   padding: 12px 0;
   cursor: pointer;
