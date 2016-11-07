@@ -541,10 +541,10 @@ button:focus {
 .news .news_list {
   padding: 0 120px 0 55px;
   border: 8px solid transparent;
-  -moz-border-image: url('../img/news_border.png') 10 round round;
-  -webkit-border-image: url('../img/news_border.png') 10 round round;
-  -o-border-image: url('../img/news_border.png') 10 round round;
-  border-image: url('../img/news_border.png') 10 round round;
+  -moz-border-image: url('../img/news_border.png') 1 round round;
+  -webkit-border-image: url('../img/news_border.png') 1 round round;
+  -o-border-image: url('../img/news_border.png') 1 round round;
+  border-image: url('../img/news_border.png') 1 round round;
   padding-bottom: 45px;
 }
 .news .news_list .news_date {
