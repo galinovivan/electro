@@ -109,7 +109,7 @@ function initMap() {
     var beachMarker = new google.maps.Marker({
         position: new google.maps.LatLng(latitude, longitude),
         map: map,
-        icon: image,
+        icon: image
     }); 
 }
 
