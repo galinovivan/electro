@@ -1096,7 +1096,7 @@ footer i:hover {
   width: 100%;
   padding-left: 80px;
   position: absolute;
-  bottom: -235px;
+  bottom: -240px;
   left: 0;
   padding-top: 45px;
   opacity: 0;
@@ -1574,7 +1574,7 @@ header.border {
   top: auto;
 }
 .shop_items .wrapper {
-  padding: 10px 0;
+  padding: 15px 0;
   padding-left: 10px;
   overflow: visible;
 }
@@ -1727,6 +1727,7 @@ header.border {
   background-image: url('../img/order_icon.png');
   background-repeat: no-repeat;
   background-position: 10% 50%;
+  padding-left: 15px;
 }
 .base_btn.lg {
   width: 260px;
